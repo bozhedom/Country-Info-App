@@ -31,8 +31,9 @@ const CountryDetail = () => {
           <p>{error}</p>
           <hr />
           <p className="mb-0">
-            Пожалуйста, вернитесь к <Link to="/">списку стран</Link> и
-            попробуйте снова.
+            Пожалуйста, вернитесь к{' '}
+            <Link to="/Country-Info-App-/">списку стран</Link> и попробуйте
+            снова.
           </p>
         </div>
       </div>
@@ -86,7 +87,7 @@ const CountryDetail = () => {
                 </li>
               </ul>
               <div className="mt-4">
-                <Link to="/" className="btn btn-secondary">
+                <Link to="/Country-Info-App-/" className="btn btn-secondary">
                   Назад в список стран
                 </Link>
               </div>
