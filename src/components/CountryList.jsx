@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
+import '../App.css';
 const CountryList = () => {
   const [countries, setCountries] = useState([]);
   const [error, setError] = useState(null);
@@ -43,9 +43,10 @@ const CountryList = () => {
             <div className="card">
               <img
                 src={country.flags.png}
-                className="card-img-top text-center"
+                className="card-img-top flag-image"
                 alt={`Флаг ${country.name.common}`}
               />
+              <hr style={{ margin: '0px' }} />
               <div className="card-body">
                 <h5 className="card-title">{country.name.common}</h5>
                 <p className="card-text">Столица: {country.capital}</p>
