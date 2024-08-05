@@ -26,7 +26,7 @@ const CountryList = () => {
           <hr />
           <p className="mb-0">
             Пожалуйста, вернитесь к{' '}
-            <Link to="/Country-Info-App-/">списку стран</Link> и попробуйте
+            <Link to="/Country-Info-App/">списку стран</Link> и попробуйте
             снова.
           </p>
         </div>
@@ -51,7 +51,7 @@ const CountryList = () => {
                 <h5 className="card-title">{country.name.common}</h5>
                 <p className="card-text">Столица: {country.capital}</p>
                 <Link
-                  to={`/Country-Info-App-/country/${country.name.common}`}
+                  to={`/Country-Info-App/country/${country.name.common}`}
                   className="btn btn-primary"
                 >
                   Подробнее
